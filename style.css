@@ -1,0 +1,227 @@
+body {
+  font-family: "Bogart", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#piano {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#piano h2 {
+  margin-bottom: 20px;
+}
+
+.piano {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.white-key {
+  background: white;
+  border: 1px solid #333;
+  width: 50px;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 150px;
+  box-sizing: border-box;
+  transition: transform 0.1s, box-shadow 0.1s;
+  flex-shrink: 0;
+}
+
+.white-key span {
+  display: block;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.black-keys {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.black-key {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 85px;
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+  transition: transform 0.1s, box-shadow 0.1s;
+  pointer-events: auto;
+}
+
+.black-key span {
+  font-size: 0.7em;
+  display: block;
+  color: #ccc;
+}
+
+/* Black key positioning will be handled by JavaScript */
+
+.song-keys {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.song-keys h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.song-keys p {
+  margin: 5px 0;
+}
+
+.song-keys span {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+#home {
+  background-color: #f9f9f9;
+}
+
+#about {
+  background-color: #eee;
+}
+
+#services {
+  background-color: #f2f2f2;
+}
+
+#booking {
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+#booking h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-family: "Bogart", sans-serif;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
